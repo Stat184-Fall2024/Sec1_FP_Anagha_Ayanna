@@ -66,8 +66,8 @@ We present the guidelines as a checklist in this README. This means that your te
   - [ ] __Optional:__ Use the repo's Issues system to track and address any problems, core tasks, etc. 
 - [ ] All code should be written according to a Style Guide of your choice. List this Style Guide as a code comment in your first code chunk.
   - __Possible Style Guides:__ There are several different coding Style Guides you can follow; here are a few. [The BOAST Style Guide](https://educationshinyappteam.github.io/Style_Guide/coding.html), [The Tidyverse Style Guide](https://style.tidyverse.org/), [Google's R Style Guide](https://google.github.io/styleguide/Rguide.html)
-- [ ] Sign up for your Work-in-Progress Presentation
-- [ ] Complete your Work-in-Progress Presentation (details below)
+- [X] Sign up for your Work-in-Progress Presentation
+- [X] Complete your Work-in-Progress Presentation (details below)
 - [ ] Finalize your work and submit your report as a __PDF__ to the appropriate submission portal in Canvas by the deadline.
   - [ ] As a comment on your submission, include a link to your team's project repo.
 - [ ] Each team member must complete their own copy of the Self & Pear Evaluations QMD file and upload the rendered file to the appropriate submission portal in Canvas by the deadline.
