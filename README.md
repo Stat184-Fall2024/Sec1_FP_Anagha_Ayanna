@@ -32,7 +32,7 @@ We present the guidelines as a checklist in this README. This means that your te
   - [X] Your main data source may __not__ be one that we used in class nor be found in any R package.
   - [X] Supplementary data sources may come from anywhere.
 - [X] Read in your data and perform any necessary data wrangling and cleaning.
-- [ ] Conduct Exploratory Data Analysis.
+- [X] Conduct Exploratory Data Analysis.
 - [ ] Prepare a reproducible report.
   - [ ] Use a QMD file; the output type is PDF.
   - [ ] The report should be well organized with section headings
@@ -59,9 +59,9 @@ We present the guidelines as a checklist in this README. This means that your te
   - [ ]  You should properly cite any work you reference (including data) according to your choice of citation style. We've included files for APA7 and MLA9 as part of this template. If you want to use a different citation style, you will need download the CSL file from the [Zotero Style Respository](https://www.zotero.org/styles/) and include it in your team's repo.
     - __Fail Safe:__ You can also put your citations as footnotes. 
 - [ ] Use GitHub to share changes and edits; there should be multiple commits to your repo.
-  - [ ] Each team member must have at least two (2) commits in the repo's history.
-  - [ ] There should be at must be at least one Pull Request that resulted in a successful merging of two branches.
-  - [ ] One team member should create the Pull Request while a *different* team member should review and complete the Pull Request.
+  - [] Each team member must have at least two (2) commits in the repo's history.
+  - [X] There should be at must be at least one Pull Request that resulted in a successful merging of two branches.
+  - [X] One team member should create the Pull Request while a *different* team member should review and complete the Pull Request.
   - [ ] Ensure that your instructor has access to your repo.
   - [ ] __Optional:__ Use the repo's Issues system to track and address any problems, core tasks, etc. 
 - [ ] All code should be written according to a Style Guide of your choice. List this Style Guide as a code comment in your first code chunk.
