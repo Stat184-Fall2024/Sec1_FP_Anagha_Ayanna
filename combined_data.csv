@@ -1,0 +1,66 @@
+
+R version 4.4.1 (2024-06-14) -- "Race for Your Life"
+Copyright (C) 2024 The R Foundation for Statistical Computing
+Platform: aarch64-apple-darwin20
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+[R.app GUI 1.80 (8416) aarch64-apple-darwin20]
+
+[Workspace restored from /Users/ayannanorfleet/.RData]
+[History restored from /Users/ayannanorfleet/.Rapp.history]
+
+> # Load necessary libraries
+> library(dplyr)   # Data manipulation
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+> library(magrittr) # Pipe operator
+> 
+> # Combine the cleaned datasets and calculate a ratio for earnings difference
+> combined_data <- recent_grads_cleaned %>%
++   inner_join(grad_students_cleaned, by = "Major") %>%
++   mutate(earnings_ratio = median_grad_earnings / median_non_grad_earnings) %>%
++   select(Major, median_grad_earnings, median_non_grad_earnings, earnings_ratio)
+> 
+> # View the resulting table
+> print(combined_data)
+# A tibble: 172 × 4
+   Major                                     median_grad_earnings median_non_grad_earnings earnings_ratio
+   <chr>                                                    <dbl>                    <dbl>          <dbl>
+ 1 PETROLEUM ENGINEERING                                   124000                   126000          0.984
+ 2 MINING AND MINERAL ENGINEERING                          100000                    95000          1.05 
+ 3 METALLURGICAL ENGINEERING                               100000                    98000          1.02 
+ 4 NAVAL ARCHITECTURE AND MARINE ENGINEERING               102000                   100000          1.02 
+ 5 CHEMICAL ENGINEERING                                    102000                    90000          1.13 
+ 6 NUCLEAR ENGINEERING                                     110000                   100000          1.1  
+ 7 ACTUARIAL SCIENCE                                       110000                    76000          1.45 
+ 8 ASTRONOMY AND ASTROPHYSICS                               96000                    85000          1.13 
+ 9 MECHANICAL ENGINEERING                                  100000                    82000          1.22 
+10 ELECTRICAL ENGINEERING                                  106000                    90000          1.18 
+# ℹ 162 more rows
+# ℹ Use `print(n = ...)` to see more rows
+> # View the combined data table
+> View(combined_data)
+> 
+> 
