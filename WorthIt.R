@@ -48,7 +48,7 @@ p3 <- ggplot(data, aes(x = reorder(Major_category, SalarySpread, FUN = median), 
     plot.title = element_text(size = 14, face = "bold")
   ) +
   labs(
-    title = "Salary Spread by Major Category (No Outliers)",
+    title = "Salary Spread by Major Category",
     x = "Major Category",
     y = "Salary Spread (P75th - P25th)"
   )
