@@ -28,10 +28,10 @@ We present the guidelines as a checklist in this README. This means that your te
 - [X] Make sure that each team member has access to the repo.
 - [X] Come up with a topic and set of research questions your team will explore.
 - [X] Make a plan for your work. We suggested putting together your work plan by <mark>Wednesday, Dec. 1, 2024</mark>.
-- [ ] Locate appropriate data sources for your project.
-  - [ ] Your main data source may __not__ be one that we used in class nor be found in any R package.
-  - [ ] Supplementary data sources may come from anywhere.
-- [ ] Read in your data and perform any necessary data wrangling and cleaning.
+- [X] Locate appropriate data sources for your project.
+  - [X] Your main data source may __not__ be one that we used in class nor be found in any R package.
+  - [X] Supplementary data sources may come from anywhere.
+- [X] Read in your data and perform any necessary data wrangling and cleaning.
 - [ ] Conduct Exploratory Data Analysis.
 - [ ] Prepare a reproducible report.
   - [ ] Use a QMD file; the output type is PDF.
