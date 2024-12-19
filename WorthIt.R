@@ -48,7 +48,7 @@ p3 <- ggplot(data, aes(x = reorder(Major_category, SalarySpread, FUN = median), 
     plot.title = element_text(size = 14, face = "bold")
   ) +
   labs(
-    title = "Box Plot of Salary Spread by Major Category (No Outliers)",
+    title = "Salary Spread by Major Category (No Outliers)",
     x = "Major Category",
     y = "Salary Spread (P75th - P25th)"
   )
@@ -92,7 +92,7 @@ p4 <- ggplot(highlighted_comparisons, aes(x = reorder(Comparison, `diff`), y = `
   scale_fill_manual(values = c("Most Worth It" = "lightblue", "Least Worth It" = "pink")) +  # Assign colors
   theme_minimal() +
   labs(
-    title = "Top 5 Most and Least Worth It Majors Based on Salary Spread",
+    title = "Most and Least Worth It Majors",
     x = "Comparison of Major Categories",
     y = "Mean Difference in Salary Spread",
     fill = "Category"
